@@ -1,5 +1,8 @@
 #include <stdio.h>
-
+/**
+ * main - Entry point
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	char achar;
@@ -14,5 +17,5 @@ int main(void)
 	printf("Size of a long long int: %lu byte(s)\n",sizeof(alnglng);
 	printf("Size of a float: %lu byte(s)\n",sizeof(afloat);
 
-	return(0);
+	return	(0);
 }
