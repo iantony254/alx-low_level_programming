@@ -8,21 +8,15 @@
  * Return: concatenated string
  */
 
-char *_strncat(char *dest, char *src, int n)
+char *strcat(char *dest, const char *src)
 {
-   int i;
-   //while dest exists and isn't null terminator yet
-   while (*dest)
-       dest++;
-   // replace dest while src exists and insert nulls till n bytes
-   for (i = 0; i < n; i++)
-   {
-	while (*src)
-	{
-		*dest = *src;
-		dest++;
-		src++;
-	}
-	*dest = '\0';
-   }
+	int index = 0, dest_len = 0;
+
+	while (dest[index++])
+		dest_len++;
+
+	for (index = 0; src[index]; index++)
+		dest[dest_len++] = src[index];
+
+	return (dest);
 }
