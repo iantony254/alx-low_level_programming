@@ -5,9 +5,8 @@
  * _strcmp - compare two strings
  * @s1: one string
  * @s2: one string
- * Return: int that tells num spaces in between
+ * Return: 0
  */
-
 int _strcmp(char *s1, char *s2)
 {
 	int i = 0;
