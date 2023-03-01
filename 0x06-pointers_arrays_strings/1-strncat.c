@@ -11,6 +11,7 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
+   int i;
    //while dest exists and isn't null terminator yet
    while (*dest)
        dest++;
