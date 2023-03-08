@@ -2,10 +2,10 @@ C - Recursion
 In this project, I learned about recursion in C.
 
 Tests âœ”ï¸
-tests: Folder of test files. Provided by Holberton School.
-Helper File í¹Œ
+tests: Folder of test files. 
+Helper File ï¿½ï¿½ï¿½
 _putchar.c: C function that writes a character to stdout.
-Header File í³
+Header File ï¿½ï¿½ï¿½
 main.h: Header file containing prototypes for all functions written in the project.
 File	Prototype
 0-puts_recursion.c	void _puts_recursion(char *s);
@@ -17,7 +17,7 @@ File	Prototype
 6-is_prime_number.c	int is_prime_number(int n);
 7-is_palindrome.c	int is_palindrome(char *s);
 100-wildcmp.c	int wildcmp(char *s1, char *s2);
-Tasks í³ƒ
+Tasks ï¿½ï¿½ï¿½
 0. She locked away a secret, deep inside herself, something she once knew to be true... but chose to forget
 
 0-puts_recursion.c: C function that prints a string, followed by a new line.
