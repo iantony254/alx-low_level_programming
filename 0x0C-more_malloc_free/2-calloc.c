@@ -3,28 +3,32 @@
 #include "main.h"
 
 /**
- * _calloc - allocate memory and set all values to 0
- * @nmemb: size
- * @size: sizeof(datatype)
- * Return: pointer to calloc'd string
+ * _calloc - Allocates memory for an array of a certain number
+ *           of elements each of an inputted byte size.
+ * @nmemb: The number of elements.
+ * @size: The byte size of each array element.
+ *
+ * Return: If nmemb = 0, size = 0, or the function fails - NULL.
+ *         Otherwise - a pointer to the allocated memory.
  */
-
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *ptr;
-	unsigned int i; /* match unsigned arguments */
+	void *mem;
+	char *filler;
+	unsigned int index;
 
-	if (nmemb <= 0 || size <= 0) /* validate input */
+	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	/* allocate memory and check if error */
-	ptr = malloc(nmemb * size);
-	if (ptr == NULL)
+	mem = malloc(size * nmemb);
+
+	if (mem == NULL)
 		return (NULL);
 
-	/* set allocated memory values to 0 */
-	for (i = 0; i < nmemb * size; i++)
-		*((char *)ptr + i) = 0; /* type cast assigning values*/
+	filler = mem;
 
-	return (ptr);
+	for (index = 0; index < (size * nmemb); index++)
+		filler[index] = '\0';
+
+	return (mem);
 }
