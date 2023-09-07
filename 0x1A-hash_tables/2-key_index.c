@@ -1,7 +1,3 @@
-/**
- * By Ian Antony
- **/
- 
 #include "hash_tables.h"
 
 /**

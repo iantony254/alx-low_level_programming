@@ -1,7 +1,3 @@
-/**
- * By Ian Antony
- **/
- 
 #include "hash_tables.h"
 /**
  *hash_table_get - function that retrieves a value associated with a key

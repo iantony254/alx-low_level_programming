@@ -1,8 +1,5 @@
-/**
- * By Ian Antony
- **/
- 
 #include "hash_tables.h"
+
 /**
  * hash_table_create - create a hash table
  * @size: size of the table
